@@ -1,30 +1,30 @@
 <script lang="ts">
 	const images = [
-		'/assets/images/dina1.jpg',
-		'/assets/images/dina2.jpg',
-		'/assets/images/dina3.jpg',
-		'/assets/images/dina4.jpg',
-		'/assets/images/dinaa2.jpg',
-		'/assets/images/dinaa3.jpg',
-		'/assets/images/dinaa4.jpg'
+		'./assets/images/dina1.jpg',
+		'./assets/images/dina2.jpg',
+		'./assets/images/dina3.jpg',
+		'./assets/images/dina4.jpg',
+		'./assets/images/dinaa2.jpg',
+		'./assets/images/dinaa3.jpg',
+		'./assets/images/dinaa4.jpg'
 	];
 	const images2 = [
-		'/assets/images/dinaaa.jpg',
-		'/assets/images/d5.jpg',
-		'/assets/images/d6.jpg',
-		'/assets/images/d7.jpg',
-		'/assets/images/d9.jpg',
-		'/assets/images/d10.jpg',
-		'/assets/images/d11.jpg'
+		'./assets/images/dinaaa.jpg',
+		'./assets/images/d5.jpg',
+		'./assets/images/d6.jpg',
+		'./assets/images/d7.jpg',
+		'./assets/images/d9.jpg',
+		'./assets/images/d10.jpg',
+		'./assets/images/d11.jpg'
 	];
 	const images3 = [
-		'/assets/images/dinaa5.jpg',
-		'/assets/images/d12.jpg',
-		'/assets/images/d13.jpg',
-		'/assets/images/d14.jpg',
-		'/assets/images/d15.jpg',
-		'/assets/images/d16.jpg',
-		'/assets/images/d17.jpg'
+		'./assets/images/dinaa5.jpg',
+		'./assets/images/d12.jpg',
+		'./assets/images/d13.jpg',
+		'./assets/images/d14.jpg',
+		'./assets/images/d15.jpg',
+		'./assets/images/d16.jpg',
+		'./assets/images/d17.jpg'
 	];
 
 	const sweetWords = [
@@ -115,7 +115,7 @@
 			style={`top: ${styles[i].top}; left: ${styles[i].left}; transform: ${styles[i].transform};`}
 		>
 			<img class="img" src={image} alt="Polaroid Wall" />
-			<img src="/assets/images/pin.png" class="pin" alt="pin" />
+			<img src="./assets/images/pin.png" class="pin" alt="pin" />
 			<div class="pretty-word">{prettyWords1[i]}</div>
 		</div>
 	{/each}
@@ -128,7 +128,7 @@
 			style={`top: ${styles2[i].top}; left: ${styles2[i].left}; transform: ${styles2[i].transform};`}
 		>
 			<img class="img" src={image} alt="Polaroid Wall" />
-			<img src="/assets/images/pin.png" class="pin" alt="pin" />
+			<img src="./assets/images/pin.png" class="pin" alt="pin" />
 			<div class="pretty-word">{prettyWords2[i]}</div>
 		</div>
 	{/each}
@@ -141,7 +141,7 @@
 			style={`top: ${styles3[i].top}; left: ${styles3[i].left}; transform: ${styles3[i].transform};`}
 		>
 			<img class="img" src={image} alt="Polaroid Wall" />
-			<img src="/assets/images/pin.png" class="pin" alt="pin" />
+			<img src="./assets/images/pin.png" class="pin" alt="pin" />
 			<div class="pretty-word">{prettyWords3[i]}</div>
 		</div>
 	{/each}
@@ -157,7 +157,7 @@
 		position: relative;
 		width: 100%;
 		height: 620px;
-		background-image: url('/assets/images/corkboard-texture.jpg');
+		background-image: url('./assets/images/corkboard-texture.jpg');
 		background-size: cover;
 		overflow: hidden;
 		margin: 0 100px;

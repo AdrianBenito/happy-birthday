@@ -6,8 +6,8 @@
 	let duration = 0;
 
 	const songs: Record<string, { title: string; src: string }> = {
-		classic: { title: 'Cumpleaños Clásico', src: '/assets/audios/classic.mp3' },
-		latin: { title: 'Las Mañanitas', src: '/assets/audios/mananitas.mp3' }
+		classic: { title: 'Cumpleaños Clásico', src: './assets/audios/classic.mp3' },
+		latin: { title: 'Las Mañanitas', src: './assets/audios/mananitas.mp3' }
 	};
 
 	function togglePlay() {
@@ -50,7 +50,7 @@
 	<div class="info">
 		<strong>{songs[selectedSong].title}</strong>
 		<sl-dropdown class="song-selector">
-			<img slot="trigger" class="gif" src="/assets/images/setting.gif" alt="Settings" />
+			<img slot="trigger" class="gif" src="./assets/images/setting.gif" alt="Settings" />
 			<sl-menu on:sl-select={handleSongChange}>
 				<sl-menu-item value="classic">Classic</sl-menu-item>
 				<sl-menu-item value="latin">Las Mañanitas</sl-menu-item>
@@ -61,9 +61,9 @@
 	<div class="controls">
 		<button on:click={togglePlay} aria-label="Play or pause">
 			{#if isPlaying}
-				<img class="gif" src="/assets/images/pause.gif" alt="Pause" />
+				<img class="gif" src="./assets/images/pause.gif" alt="Pause" />
 			{:else}
-				<img class="gif" src="/assets/images/play.gif" alt="Play" />
+				<img class="gif" src="./assets/images/play.gif" alt="Play" />
 			{/if}
 		</button>
 
