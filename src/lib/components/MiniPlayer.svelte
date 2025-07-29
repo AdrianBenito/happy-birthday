@@ -46,6 +46,41 @@
 	}
 </script>
 
+{#if selectedSong === 'latin' && isPlaying}
+	<div id="lyrics" class="lyrics hidden">
+		<p>
+			Estas son las mañanitas<br />
+			Que cantaba el rey David<br />
+			Hoy, por ser día de tu santo<br />
+			Te las cantamos aquí<br /><br />
+			Despierta, mi bien, despierta<br />
+			Mira que ya amaneció<br />
+			Ya los pajaritos cantan<br />
+			La luna ya se metió<br /><br />
+			Qué linda está la mañana<br />
+			En que vengo a saludarte<br />
+			Venimos todos con gusto<br />
+			Y placer a felicitarte<br /><br />
+			El día en que tú naciste<br />
+			Nacieron todas las flores<br />
+			En la pila del bautismo<br />
+			Cantaron los ruiseñores<br /><br />
+			Ya viene amaneciendo<br />
+			Ya la luz del día nos dio<br />
+			Levántate de mañana<br />
+			Mira que ya amaneció<br /><br />
+			Si yo pudiera bajarte<br />
+			Las estrellas y un lucero<br />
+			Para poder demostrarte<br />
+			Lo mucho que yo te quiero<br /><br />
+			Con jazmines y flores<br />
+			Este día quiero adornar<br />
+			Hoy, por ser día de tu santo<br />
+			Te venimos a cantar
+		</p>
+	</div>
+{/if}
+
 <div class="mini-player">
 	<div class="info">
 		<strong>{songs[selectedSong].title}</strong>
@@ -129,5 +164,18 @@
 		height: 50px;
 
 		cursor: pointer;
+	}
+
+	.lyrics {
+		font-size: 0.95rem;
+		line-height: 1.5;
+		color: #333;
+		background: rgba(255, 255, 255, 0.6);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+		max-height: 200px;
+		overflow: auto;
+		margin: 20px;
 	}
 </style>
