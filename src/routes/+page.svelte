@@ -156,7 +156,7 @@
 		background: linear-gradient(90deg, #ff6ec4, #7873f5);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		line-height: normal;
+		line-height: 200px;
 	}
 
 	/* basic */

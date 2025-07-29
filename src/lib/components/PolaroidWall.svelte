@@ -157,7 +157,7 @@
 		position: relative;
 		width: 100%;
 		height: 620px;
-		background-image: url('./assets/images/corkboard.jpg');
+		background-image: url('/happy-birthday/assets/images/corkboard.jpg');
 		background-size: cover;
 		overflow: hidden;
 		margin: 0 100px;
