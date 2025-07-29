@@ -1,0 +1,16 @@
+:root {
+    --primary-font: "Ananda", sans-serif;
+    --font-size: 20px;
+
+    --color-baby-pink: #FFD1DC;
+    --color-sky-blue: #B0E0E6;
+    --color-mint-green: #98FB98;
+    --color-cream-yellow: #FFFACD;
+    --color-soft-lavender: #E6E6FA;
+    --color-pale-peach: #FFE5B4;
+    --color-dove-gray: #DCDCDC;
+
+    --color-dark-text: #333;
+    --color-light-text: #555;
+    --color-light-background: #F8F8F8;
+}
